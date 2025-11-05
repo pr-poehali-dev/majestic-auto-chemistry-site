@@ -10,12 +10,12 @@ const Index = () => {
   const products = [
     {
       id: 1,
-      name: 'Автошампунь Premium',
+      name: 'Автошампунь Light',
       category: 'Автохимия',
-      description: 'Профессиональный шампунь для бесконтактной мойки автомобилей',
+      description: 'Базовый шампунь для регулярной мойки легковых автомобилей',
       image: 'https://cdn.poehali.dev/projects/8d42f4f6-29e1-4318-90ac-f608e10f1b44/files/8a3f3c19-fdfe-49d4-afe1-9d85cd15797d.jpg',
       instructions: [
-        'Разбавить концентрат водой в пропорции 1:100 для пенообразователя',
+        'Разбавить концентрат водой в пропорции 1:80 для пенообразователя',
         'Нанести пену на поверхность автомобиля',
         'Выдержать 2-3 минуты, не допуская высыхания',
         'Смыть водой под давлением'
@@ -23,67 +23,41 @@ const Index = () => {
     },
     {
       id: 2,
-      name: 'Средство для мытья посуды',
-      category: 'Бытовая химия',
-      description: 'Концентрированное моющее средство с ароматом лимона',
-      image: 'https://cdn.poehali.dev/projects/8d42f4f6-29e1-4318-90ac-f608e10f1b44/files/3c16f3a0-8a63-4a0b-a5fa-40dbd949c00b.jpg',
+      name: 'Автошампунь Extra',
+      category: 'Автохимия',
+      description: 'Усиленная формула для сильных загрязнений и грузовых автомобилей',
+      image: 'https://cdn.poehali.dev/projects/8d42f4f6-29e1-4318-90ac-f608e10f1b44/files/8a3f3c19-fdfe-49d4-afe1-9d85cd15797d.jpg',
       instructions: [
-        'Нанести 1-2 капли на губку',
-        'Вспенить под струей воды',
-        'Помыть посуду',
-        'Тщательно прополоскать чистой водой'
+        'Разбавить концентрат водой в пропорции 1:60 для усиленного эффекта',
+        'Нанести на сильно загрязненные участки',
+        'Дать средству подействовать 3-5 минут',
+        'Смыть под высоким давлением'
       ]
     },
     {
       id: 3,
-      name: 'Полироль для пластика',
-      category: 'Автохимия',
-      description: 'Восстанавливает цвет и блеск пластиковых деталей салона',
-      image: 'https://cdn.poehali.dev/projects/8d42f4f6-29e1-4318-90ac-f608e10f1b44/files/8a3f3c19-fdfe-49d4-afe1-9d85cd15797d.jpg',
+      name: 'Мыло хозяйственное',
+      category: 'Бытовая химия',
+      description: 'Натуральное хозяйственное мыло для стирки и уборки',
+      image: 'https://cdn.poehali.dev/projects/8d42f4f6-29e1-4318-90ac-f608e10f1b44/files/3c16f3a0-8a63-4a0b-a5fa-40dbd949c00b.jpg',
       instructions: [
-        'Очистить поверхность от пыли и грязи',
-        'Нанести небольшое количество средства на мягкую ткань',
-        'Равномерно распределить по поверхности',
-        'Отполировать сухой салфеткой до блеска'
+        'Смочить мыло и вспенить на загрязненной поверхности',
+        'Для стирки: натереть на терке и растворить в теплой воде',
+        'Оставить на 10-15 минут для сильных загрязнений',
+        'Тщательно прополоскать чистой водой'
       ]
     },
     {
       id: 4,
-      name: 'Универсальный очиститель',
+      name: 'Универсальное средство',
       category: 'Бытовая химия',
-      description: 'Эффективно удаляет жир и загрязнения с любых поверхностей',
+      description: 'Многофункциональное моющее средство для дома и офиса',
       image: 'https://cdn.poehali.dev/projects/8d42f4f6-29e1-4318-90ac-f608e10f1b44/files/3c16f3a0-8a63-4a0b-a5fa-40dbd949c00b.jpg',
       instructions: [
-        'Распылить на загрязненную поверхность с расстояния 15-20 см',
-        'Дать средству подействовать 30-60 секунд',
-        'Протереть влажной тряпкой',
-        'При сильных загрязнениях повторить процедуру'
-      ]
-    },
-    {
-      id: 5,
-      name: 'Воск для кузова',
-      category: 'Автохимия',
-      description: 'Защитный воск с водоотталкивающим эффектом',
-      image: 'https://cdn.poehali.dev/projects/8d42f4f6-29e1-4318-90ac-f608e10f1b44/files/8a3f3c19-fdfe-49d4-afe1-9d85cd15797d.jpg',
-      instructions: [
-        'Наносить только на чистую и сухую поверхность',
-        'Распределить тонким слоем круговыми движениями',
-        'Дать высохнуть до матового оттенка (5-10 минут)',
-        'Отполировать мягкой микрофиброй'
-      ]
-    },
-    {
-      id: 6,
-      name: 'Средство для стекол',
-      category: 'Бытовая химия',
-      description: 'Не оставляет разводов, подходит для зеркал и стеклянных поверхностей',
-      image: 'https://cdn.poehali.dev/projects/8d42f4f6-29e1-4318-90ac-f608e10f1b44/files/3c16f3a0-8a63-4a0b-a5fa-40dbd949c00b.jpg',
-      instructions: [
-        'Распылить на стекло или зеркало',
-        'Протереть чистой сухой тряпкой или бумажным полотенцем',
-        'Для лучшего результата использовать микрофибру',
-        'Не применять под прямыми солнечными лучами'
+        'Развести 50-100 мл средства на 5 литров воды',
+        'Нанести на поверхность губкой или тряпкой',
+        'Дать средству подействовать 1-2 минуты',
+        'Протереть чистой влажной тряпкой'
       ]
     }
   ];
@@ -140,10 +114,10 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="animate-fade-in">
                 <h1 className="text-4xl md:text-6xl font-bold text-secondary mb-6 leading-tight">
-                  Профессиональная химия для вашего бизнеса
+                  Профессиональная химия из Самары
                 </h1>
                 <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                  Автомобильная и бытовая химия премиум-класса от производителя. Качество, проверенное временем.
+                  Автомобильная и бытовая химия от производителя. 5 лет качества и надежности.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Button size="lg" onClick={() => scrollToSection('catalog')} className="group">
@@ -167,7 +141,7 @@ const Index = () => {
                       <Icon name="Award" size={24} className="text-primary" />
                     </div>
                     <div>
-                      <p className="text-2xl font-bold text-secondary">15+ лет</p>
+                      <p className="text-2xl font-bold text-secondary">5 лет</p>
                       <p className="text-sm text-muted-foreground">на рынке</p>
                     </div>
                   </div>
@@ -241,31 +215,31 @@ const Index = () => {
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">О компании Маджестик</h2>
                 <p className="text-muted-foreground mb-4">
-                  Компания Маджестик уже более 15 лет занимается производством и поставкой профессиональной автомобильной и бытовой химии. Мы гордимся качеством нашей продукции и доверием наших клиентов.
+                  Компания Маджестик из Самары уже 5 лет занимается производством и поставкой профессиональной автомобильной и бытовой химии. Мы специализируемся на автошампунях различных серий и качественной бытовой химии.
                 </p>
                 <p className="text-muted-foreground mb-6">
-                  Наша миссия — предоставлять эффективные и безопасные решения для ухода за автомобилями и домом. Все продукты проходят строгий контроль качества и соответствуют международным стандартам.
+                  Наша продукция включает автошампуни Light и Extra для разных типов загрязнений, натуральное хозяйственное мыло и универсальные средства для дома. Все продукты производятся в Самаре с контролем качества.
                 </p>
                 <div className="grid grid-cols-3 gap-6">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
                       <Icon name="Factory" size={32} className="text-primary" />
                     </div>
-                    <p className="text-2xl font-bold text-secondary">15+</p>
+                    <p className="text-2xl font-bold text-secondary">5</p>
                     <p className="text-sm text-muted-foreground">лет опыта</p>
                   </div>
                   <div className="text-center">
                     <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-3">
                       <Icon name="Package" size={32} className="text-accent" />
                     </div>
-                    <p className="text-2xl font-bold text-secondary">500+</p>
-                    <p className="text-sm text-muted-foreground">продуктов</p>
+                    <p className="text-2xl font-bold text-secondary">4</p>
+                    <p className="text-sm text-muted-foreground">линейки продукции</p>
                   </div>
                   <div className="text-center">
                     <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
                       <Icon name="Users" size={32} className="text-primary" />
                     </div>
-                    <p className="text-2xl font-bold text-secondary">5000+</p>
+                    <p className="text-2xl font-bold text-secondary">1000+</p>
                     <p className="text-sm text-muted-foreground">клиентов</p>
                   </div>
                 </div>
@@ -332,17 +306,17 @@ const Index = () => {
                   <div className="space-y-4">
                     <div className="flex justify-between items-center pb-4 border-b">
                       <div>
-                        <p className="font-semibold">По Москве</p>
+                        <p className="font-semibold">По Самаре</p>
                         <p className="text-sm text-muted-foreground">1-2 рабочих дня</p>
                       </div>
-                      <p className="text-lg font-bold text-primary">500 ₽</p>
+                      <p className="text-lg font-bold text-primary">400 ₽</p>
                     </div>
                     <div className="flex justify-between items-center pb-4 border-b">
                       <div>
-                        <p className="font-semibold">Московская область</p>
+                        <p className="font-semibold">Самарская область</p>
                         <p className="text-sm text-muted-foreground">2-3 рабочих дня</p>
                       </div>
-                      <p className="text-lg font-bold text-primary">800 ₽</p>
+                      <p className="text-lg font-bold text-primary">700 ₽</p>
                     </div>
                     <div className="flex justify-between items-center pb-4 border-b">
                       <div>
@@ -354,7 +328,7 @@ const Index = () => {
                     <div className="flex justify-between items-center">
                       <div>
                         <p className="font-semibold">Самовывоз</p>
-                        <p className="text-sm text-muted-foreground">г. Москва, ул. Производственная, 12</p>
+                        <p className="text-sm text-muted-foreground">г. Самара, Промышленный район</p>
                       </div>
                       <p className="text-lg font-bold text-accent">Бесплатно</p>
                     </div>
@@ -444,7 +418,7 @@ const Index = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Адрес</h3>
-                      <p className="text-white/80">г. Москва, ул. Производственная, д. 12, корп. 3</p>
+                      <p className="text-white/80">г. Самара, Промышленный район</p>
                     </div>
                   </div>
 
@@ -454,8 +428,8 @@ const Index = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Телефон</h3>
-                      <p className="text-white/80">+7 (495) 123-45-67</p>
-                      <p className="text-white/80">+7 (495) 123-45-68</p>
+                      <p className="text-white/80">+7 (846) 123-45-67</p>
+                      <p className="text-white/80">+7 (846) 123-45-68</p>
                     </div>
                   </div>
 
