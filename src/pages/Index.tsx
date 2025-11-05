@@ -120,11 +120,11 @@ const Index = () => {
                   Автомобильная и бытовая химия от производителя. 5 лет качества и надежности.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <Button size="lg" onClick={() => scrollToSection('catalog')} className="group">
+                  <Button size="lg" onClick={() => scrollToSection('catalog')} className="group bg-accent hover:bg-accent/90">
                     Смотреть каталог
                     <Icon name="ArrowRight" size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                  <Button size="lg" variant="outline" onClick={() => scrollToSection('partners')}>
+                  <Button size="lg" variant="outline" onClick={() => scrollToSection('partners')} className="border-accent text-accent hover:bg-accent hover:text-white">
                     Стать партнером
                   </Button>
                 </div>
@@ -397,7 +397,7 @@ const Index = () => {
                 </Card>
               </div>
 
-              <Button size="lg" className="group">
+              <Button size="lg" className="group bg-accent hover:bg-accent/90">
                 Стать партнером
                 <Icon name="ArrowRight" size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
